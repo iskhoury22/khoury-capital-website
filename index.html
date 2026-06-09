@@ -147,7 +147,7 @@
 
     .hero-inner {
       position: relative;
-      max-width: 920px;
+      max-width: 1120px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -167,12 +167,13 @@
     /* ── HEADLINE ── */
     h1 {
       font-family: 'Newsreader', serif;
-      font-size: clamp(2.8rem, 6vw, 5.4rem);
+      font-size: clamp(2.6rem, 5.5vw, 5rem);
       font-weight: 500;
       color: #F4F7FB;
       letter-spacing: -0.01em;
-      line-height: 1.15;
+      line-height: 1.12;
       margin-bottom: 28px;
+      white-space: nowrap;
     }
 
     h1 em {
@@ -305,6 +306,10 @@
     @media (prefers-reduced-motion: reduce) {
       .divider-line { animation: none; width: 100px; }
       .divider-dot  { animation: none; opacity: 1; }
+    }
+
+    @media (max-width: 900px) {
+      h1 { white-space: normal; }
     }
 
     @media (max-width: 600px) {
