@@ -5,55 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khoury Capital</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+    
     body {
-      font-family: system-ui, -apple-system, sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
-      color: white;
-      text-align: center;
-      height: 100vh;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: #0a0f1c;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0a0f1c 0%, #1e2937 100%);
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-    .container {
-      max-width: 680px;
+      text-align: center;
       padding: 40px 20px;
     }
+    .container {
+      max-width: 800px;
+    }
+    .logo {
+      max-width: 320px;
+      margin-bottom: 40px;
+    }
     h1 {
-      font-size: 4rem;
-      margin: 0 0 16px 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.8rem;
       font-weight: 700;
+      margin: 0 0 16px 0;
+      color: #f8fafc;
     }
     .tagline {
+      font-size: 1.35rem;
+      color: #94a3b8;
+      margin-bottom: 60px;
+      letter-spacing: 2px;
+    }
+    .section {
+      padding: 100px 20px;
+      background: #0f172a;
+    }
+    h2 {
+      font-size: 2.4rem;
+      text-align: center;
+      margin-bottom: 60px;
+      color: #f1f5f9;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .service-card {
+      background: #1e2937;
+      padding: 40px 30px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+    }
+    .service-card h3 {
       color: #60a5fa;
-      font-size: 1.35rem;
-      letter-spacing: 6px;
-      margin-bottom: 50px;
-      font-weight: 500;
+      font-size: 1.5rem;
+      margin-top: 0;
     }
-    p {
-      font-size: 1.35rem;
-      line-height: 1.6;
-      opacity: 0.9;
-    }
-    .email {
-      margin-top: 80px;
-      font-size: 1.2rem;
+    footer {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: #0a0f1c;
+      color: #64748b;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Khoury Capital</h1>
-    <p class="tagline">COMING SOON • 2026</p>
-    <p>Private Equity • Carve-outs • Post-Deal Integration • Value Creation</p>
-    
-    <p class="email" style="margin-top: 100px;">
-      For inquiries or opportunities:<br>
-      <strong>issa@khoury.capital</strong>
-    </p>
+
+  <div class="hero">
+    <div class="container">
+      <img src="https://your-logo-url-here.jpg" alt="Khoury Capital" class="logo"> <!-- We'll replace this with your logo -->
+      <h1>Khoury Capital</h1>
+      <p class="tagline">PRIVATE EQUITY • POST-DEAL INTEGRATION • VALUE CREATION</p>
+      <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto;">
+        Strategic investment and operational expertise helping companies realize full value after transactions.
+      </p>
+    </div>
   </div>
+
+  <div class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Post-Merger Integration</h3>
+          <p>End-to-end integration planning and execution. Synergy realization, operating model design, and organizational alignment to deliver deal value quickly.</p>
+        </div>
+        <div class="service-card">
+          <h3>Carve-outs & Divestitures</h3>
+          <p>Expert support for complex separations. Stand-up of new operating models, TSA management, and transition services for sellers and buyers.</p>
+        </div>
+        <div class="service-card">
+          <h3>Value Creation & Operational Excellence</h3>
+          <p>Capabilities assessment, cost optimization, revenue enhancement, and performance improvement programs for portfolio companies.</p>
+        </div>
+        <div class="service-card">
+          <h3>Due Diligence & Transaction Support</h3>
+          <p>Commercial, operational, and integration due diligence. Pre-deal planning and 100-day plan development.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Khoury Capital</strong><br>
+    Professional Private Equity & Advisory Services<br><br>
+    <a href="mailto:issa@khoury.capital" style="color:#60a5fa;">issa@khoury.capital</a></p>
+    <p style="margin-top: 60px; font-size: 0.9rem;">© 2026 Khoury Capital. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
